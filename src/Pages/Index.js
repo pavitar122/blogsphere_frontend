@@ -11,7 +11,7 @@ function Index() {
     useEffect(() => {
         async function getBlogs() {
             try {
-                const response = await axios.get("http://13.201.63.75:3001/blog/fetchAllBlogs");
+                const response = await axios.get("https://blogsphere-backend-rt62.onrender.com/blog/fetchAllBlogs");
                 if (response.status === 200) {
                     setBlogs(response.data.allblogs);
                 }
