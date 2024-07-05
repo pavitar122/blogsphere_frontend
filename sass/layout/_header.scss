@@ -13,7 +13,7 @@
     @include respond(phone) {
         height: 35vh;
         gap: 0.5rem;
-        padding: 0rem;
+        padding: 0rem 2rem;
      }
 
     &__heading{
