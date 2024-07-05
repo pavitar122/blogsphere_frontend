@@ -11,7 +11,7 @@
     gap: 2rem;
 
     @include respond(phone) {
-        height: 25vh;
+        height: 35vh;
         gap: 0.5rem;
         padding: 0rem;
      }
