@@ -70,7 +70,7 @@
         font-weight: 600;
 
         @include respond(phone) {
-            font-size: 0.8rem;
+            font-size: 1.6rem;
             margin-bottom: 3rem;
          }
     }
@@ -79,7 +79,7 @@
         font-size: 2rem;
         
         @include respond(phone) {
-           font-size: 0.7rem;
+           font-size: 1.3rem;
            flex: 1;
         }
     }
