@@ -1,0 +1,56 @@
+.user-blogs{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 10rem 25rem 3rem  25rem;
+
+    @include respond(phone) {
+        padding: 3rem 3rem;
+        height: 80vh;
+    }
+
+    &__empty{
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 5rem;
+        font-weight: 600;
+        margin-top: 5rem;
+
+        @include respond(phone) {
+            font-size: 2rem;
+            height: 60vh;
+
+        }
+    }
+}
+
+.user-buttons{
+    padding: 3rem 15rem;
+    display: flex;
+    justify-content: space-between;
+
+    @include respond(phone) {
+        padding: 0; 
+    }
+
+    &__btn {
+        background-color: grey;
+        color: white;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        font-size: 1.6rem;
+        margin: 0.5rem;
+
+        @include respond(phone) {
+            padding: 0.5rem 1rem;
+            font-size: 1.7rem;
+            margin: 0.5rem  2rem 1.5rem 2rem;
+        }
+    }
+
+  
+}

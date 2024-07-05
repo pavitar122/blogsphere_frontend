@@ -1,0 +1,106 @@
+.section-user-blog {
+    padding: 7rem 8rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 100%;
+    position: relative;
+
+    &_add-btn{
+        text-decoration: none;
+        background-color: rgb(206, 184, 161);
+        padding: 2rem 2rem;
+        color:black;
+        border: 0.1px solid rgb(207, 153, 153);
+
+        @include respond(phone) {
+            text-decoration: none;
+            background-color: rgb(206, 184, 161);
+            margin-top: 0.5rem;
+            padding: 0.3rem 3rem;
+            border: 0.1px solid rgb(207, 153, 153);
+        }
+
+    }
+
+
+    @include respond(phone) {
+        padding: 0.5rem 1.5rem;
+        height: 100vh;
+    }
+
+    &__div-btn{
+        display: flex;
+        justify-content: space-between;
+        padding-top: auto;
+        position: absolute; 
+        bottom:1rem; 
+        right: 10px;
+        width: 95%;
+
+        &_btn{
+            padding: 1.5rem;
+
+            @include respond(phone) {
+                background-color: rgb(206, 184, 161);
+                padding: 0.3rem;
+                border: 0.1px solid rgb(207, 153, 153);
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.add_blog-btn {
+    display: flex;
+    justify-content: center;
+
+
+
+    &__btn {
+        padding: 1.5rem 10rem;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        font-weight: bold;
+        border: 0.5px solid rgb(224, 194, 194);
+        font-size: 4rem;
+        margin-bottom: 3rem;
+        width: 50%;
+        transition: all 0.2s ease;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+
+
+        @include respond(phone) {
+            font-size: 2rem;
+            padding: 0.5rem 10rem;
+            width: 60%;
+        }
+
+
+        &:hover {
+            background-color: var(--color-grey-dark-3);
+            transform: scale(1.01) translateY(-0.5rem);
+        }
+
+        &:active {
+            color: rgb(37, 37, 37);
+            transform: translateY(0.1rem);
+        }
+    }
+}

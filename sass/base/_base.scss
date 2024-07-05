@@ -1,0 +1,60 @@
+:root {
+    --color-primary: #eb2f64;
+    --color-primary-light: rgb(128, 61, 59);
+    --color-primary-dark: rgb(50, 44, 43);
+    --color-grey-light-1: #faf9f9;
+    --color-grey-light-2: #f4f2f2;
+    --color-grey-light-3: #f0eeee;
+    --color-grey-light-4: #ccc;
+
+    --color-light-navbar: rgba(133, 39, 36,0.5);
+    --color-dark-navbar: #322C2B;
+
+    --color-grey-dark-1: #333;
+    --color-grey-dark-2: #777;
+    --color-grey-dark-3: #999;
+
+
+    --color-register: rgb(210, 177, 177);
+
+    --shadow-dark-navbar: 0 2rem 4rem rgba(0,0,0,.6) ;
+    --shadow-dark-register: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    --shadow-dark-blog: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+
+    @include respond(phone) {
+        font-size: 56.25%;
+    }
+    // @include respond(tab-port) {
+    //     font-size: 50%;
+    // }
+
+   
+    // @include respond(big-desktop) {
+    //     font-size: 75%;
+    // }
+}
+
+body {
+   background-color: white;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import 'bootstrap/dist/css/bootstrap.min.css';

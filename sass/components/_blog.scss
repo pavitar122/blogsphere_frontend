@@ -1,0 +1,154 @@
+.blog{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    gap: 2rem;
+    border-bottom: 1px solid rgb(108, 108, 108);
+
+    @include respond(phone) {
+        gap: 0.5rem;
+    }
+
+
+    &__link{
+        text-decoration: none;
+        color: black;
+        transition: all 0.2s ease;
+
+        &:hover{
+            color: rgb(32, 32, 135);
+        }
+    }
+    &__title{
+        font-size: 5rem;
+        margin-bottom: 1rem;
+        font-weight: 650;
+
+        @include respond(phone) {
+            font-size: 2rem;
+        }
+    }
+
+    &__subtitle{
+        font-size: 3rem;
+        font-weight: 300;
+
+        @include respond(phone) {
+            font-size: 1rem;
+        }
+    }
+
+    &__detail{
+        font-size: 1.5rem;
+        font-weight: 200;
+        font-style: italic;
+
+        @include respond(phone) {
+            font-size: 1rem;
+        }
+    }
+
+    &__line{
+        background-color: black;
+        height: 1px;
+        width: 100%;
+    }
+
+ 
+}
+
+
+
+.user-blog{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    gap: 2rem;
+    border-bottom: 1px solid rgb(108, 108, 108);
+    position: relative;
+
+    @include respond(phone) {
+        gap: 0.5rem;
+    }
+
+
+    &__link{
+        text-decoration: none;
+        color: black;
+        transition: all 0.2s ease;
+
+        &:hover{
+            color: rgb(32, 32, 135);
+        }
+    }
+    &__title{
+        font-size: 5rem;
+        margin-bottom: 1rem;
+        font-weight: 650;
+
+
+        @include respond(phone) {
+            font-size: 2rem;
+        }
+    }
+
+    &__subtitle{
+        font-size: 3rem;
+        font-weight: 300;
+
+        @include respond(phone) {
+            font-size: 1rem;
+        }
+    }
+
+    &__detail{
+        font-size: 1.5rem;
+        font-weight: 200;
+        font-style: italic;
+
+        @include respond(phone) {
+            font-size: 1rem;
+        }
+    }
+
+    &__line{
+        background-color: black;
+        height: 1px;
+        width: 100%;
+    }
+
+    &__delete{
+        &:hover{
+            color: red;
+        }
+    }
+
+    &__edit{
+        &:hover{
+            color: green;
+        }
+    }
+
+    &__icons{
+        font-size: 2rem;
+        position: absolute;
+        bottom: 1rem;
+        right: 0rem;
+        display: flex;
+        gap: 1.5rem;
+        cursor: pointer;
+
+      
+
+   
+
+        @include respond(phone) {
+            font-size: 1.5rem;
+            gap: 1rem;
+        }
+    }
+
+ 
+}
