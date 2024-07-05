@@ -13,7 +13,7 @@ function Login() {
     const handlesubmit = async (event) => {
         event.preventDefault();
         try {
-            const response = await axios.post("http://13.201.63.75:3001/user/login", { email, password });
+            const response = await axios.post("https://blogsphere-backend-rt62.onrender.com/user/login", { email, password });
             if (response) {
                 localStorage.setItem("user", JSON.stringify(response.data.sendUser))
                 navigate("/user_blogs")

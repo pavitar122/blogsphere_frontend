@@ -21,7 +21,7 @@ function EditBlog() {
                 }
             }
             try {
-                const response = await axios.get(`http://13.201.63.75:3001/blog/getBlog/${params.id}`, config);
+                const response = await axios.get(`https://blogsphere-backend-rt62.onrender.com/blog/getBlog/${params.id}`, config);
                 if (response.data) {
                     const { title, subtitle, content } = response.data.blog[0];
                     settitle(title);
@@ -47,7 +47,7 @@ function EditBlog() {
         try {
             event.preventDefault();
             const data = {title, subtitle, content}
-            const resopnse = await axios.put(`http://13.201.63.75:3001/blog/editBlog/${params.id}`, data, config);
+            const resopnse = await axios.put(`https://blogsphere-backend-rt62.onrender.com/blog/editBlog/${params.id}`, data, config);
             if(resopnse){
                 navigate("/user_blogs")
             }

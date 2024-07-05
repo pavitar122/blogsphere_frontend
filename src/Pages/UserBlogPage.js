@@ -19,7 +19,7 @@ function UserBlogPage() {
                 }
             }
             try {
-                const response = await axios.get(`http://13.201.63.75:3001/blog/fetchUserBlogs`, config)
+                const response = await axios.get(`https://blogsphere-backend-rt62.onrender.com/blog/fetchUserBlogs`, config)
                 if (response) {
                     setBlogs(response.data.blogs)
                 }
@@ -59,7 +59,7 @@ function UserBlogPage() {
             }
         }
         try {
-            const response = await axios.delete(`http://13.201.63.75:3001/blog/deleteBlog/${id}`, config)
+            const response = await axios.delete(`https://blogsphere-backend-rt62.onrender.com/blog/deleteBlog/${id}`, config)
             if (response) {
                 navigate("/user_blogs")
                 const newBlogs = blogs.filter((x)=> x._id !== id)
