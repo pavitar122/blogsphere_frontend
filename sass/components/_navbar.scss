@@ -37,6 +37,9 @@
 
         &:hover{
             color:black;
+            @include respond(phone) {
+                color: white;
+            }
         }
     }
 
@@ -51,7 +54,7 @@
             margin-right: 3rem;
 
             @include respond(phone) {
-                margin-right: 1rem;
+                margin-right: 2rem;
             }
             
 
@@ -71,6 +74,9 @@
 
                 &:hover {
                     color: black;
+                    @include respond(phone) {
+                        color: wheat;
+                    }
                 }
             }
 
