@@ -25,7 +25,7 @@ function AddBlog() {
         }
         const data = { title, subtitle, content, imageLink };
         try {
-            const response = await axios.post("https://blogsphere-backend-rt62.onrender.com/blog/addBlog", data, config);
+            const response = await axios.post("https://blogsphere-backend.vercel.app/blog/addBlog", data, config);
             if (response.status === 200) {
                 navigate("/");
             }

@@ -19,7 +19,7 @@ function UserBlogPage() {
                 }
             }
             try {
-                const response = await axios.get(`https://blogsphere-backend-rt62.onrender.com/blog/fetchUserBlogs`, config)
+                const response = await axios.get(`https://blogsphere-backend.vercel.app/blog/fetchUserBlogs`, config)
                 if (response) {
                     setBlogs(response.data.blogs)
                 }
@@ -59,7 +59,7 @@ function UserBlogPage() {
             }
         }
         try {
-            const response = await axios.delete(`https://blogsphere-backend-rt62.onrender.com/blog/deleteBlog/${id}`, config)
+            const response = await axios.delete(`https://blogsphere-backend.vercel.app/blog/deleteBlog/${id}`, config)
             if (response) {
                 navigate("/user_blogs")
                 const newBlogs = blogs.filter((x)=> x._id !== id)

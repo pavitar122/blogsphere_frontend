@@ -17,7 +17,7 @@ function Register() {
     const handlesubmit = async (event) => {
         event.preventDefault();
         try {
-            const response = await axios.post(`https://blogsphere-backend-rt62.onrender.com/user/register`, {
+            const response = await axios.post(`https://blogsphere-backend.vercel.app/user/register`, {
                 email, password, name, cpassword
             })
             if (response) {
