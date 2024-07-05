@@ -74,7 +74,7 @@ function AddBlog() {
 
     return (
         <>
-            <Header src={"/Images/Header/Index-header.jpg"} heading={auth.name} message={"Add your Blog."} />
+            <Header src={"/Images/Header/edit-header.jpg"} heading={auth.name} message={"Add your Blog."} />
 
             <section className="add-blog">
 

@@ -74,7 +74,7 @@ function UserBlogPage() {
     return (
 
         <div>
-            <Header src={"/Images/Header/Index-header.jpg"} heading={auth.name} alt={"header"} />
+            <Header src={"/Images/Header/user-header.jpg"} heading={auth.name} alt={"header"} />
 
 
             {blogs.length === 0 ? (

@@ -39,7 +39,7 @@ function BlogPage() {
     return (
         <div>
             {blog.imageLink === "" ?
-             <Header src={"/Images/Header/Index-header.jpg"}  title={blog.title} /> :
+             <Header src={"/Images/Header/blog-header.jpg"}  title={blog.title} /> :
              <Header src={blog.imageLink} title={blog.title} />}
            
  

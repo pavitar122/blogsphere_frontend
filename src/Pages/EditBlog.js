@@ -59,7 +59,7 @@ function EditBlog() {
     return (
         <>
 
-        <Header src={"/Images/Header/Index-header.jpg"} heading={auth.name} message={"Edit your Blog."} />
+        <Header src={"/Images/Header/edit-header.jpg"} heading={auth.name} message={"Edit your Blog."} />
 
         <section className="add-blog">
 
